@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello, world!</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="styles/...." />
+  </head>
+
+  <body>
+    <h1>Hello World</h1>
+    <script>
+      // #####Ejercicio 1 ####
+
+      console.log("hola mundo");
+
+      // #####Ejercicio 2 ####
+
+      alert("Me llamo Álvaro");
+
+      // #####Ejercicio 3 ####
+
+      const name = "Álvaro";
+      const surname = "Zájara";
+
+      console.log(`${name} ${surname}`);
+
+      // #####Ejercicio 4 ####
+
+      const num1 = 43;
+      const num2 = 67;
+
+      console.log(num1 + num2);
+
+      // #####Ejercicio 5 ####
+
+      const nota_examen = 5.8;
+
+      if (nota_examen < 5) {
+        console.log(`Vaya, has suspendido el exámen con un ${nota_examen}`);
+      } else {
+        console.log(
+          `¡Enhorabuena!Has aprobado el exámen con un ${nota_examen}`
+        );
+      }
+
+      // #####Ejercicio 6 ####
+
+      let frase = 'Tinc un cotxe de color blau'
+
+      frase = frase.replace('blau', 'verd')
+      console.log(frase);
+      frase = frase.replace(/[e] /gi, 'u ');
+      console.log(frase);
+      
+// #####Ejercicio 7 ####
+
+const lista = ['taula', 'cadira', 'ordinador', 'llibreta'];
+
+for (let i = 0; i < lista.length; i++ ){
+    console.log(`L'element ${lista[i]} està a la posició ${i}`);
+}
+
+// #####Ejercicio 8 ####
+
+function calculator(operator, value1, value2){
+    let type = operator.toLowerCase();
+
+    switch(type){
+        case 'suma':
+        console.log(value1 + value2)
+        break;
+        case 'resta': 
+        console.log(value1 - value2);
+        break; 
+        case 'multiplicacion':
+        console.log(value1 * value2)
+        break; 
+    }
+
+}
+
+calculator('SUMA', 5, 2);
+calculator('resta', 5, 2);
+calculator('Multiplicacion', 5, 2);
+
+      
+
+    </script>
+  </body>
+</html>
